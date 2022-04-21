@@ -12,6 +12,7 @@ Users are redirected to the `original_url` when the `short_url` is sent to the A
 * If you pass an invalid URL that doesn't follow the valid `http://www.example.com` format, the JSON response will contain `{ error: 'invalid url' }`
 
 ## My Code's Logic
+* Add log middleware to help with troubleshooting.
 * Create MongoDB schema and init `Url` model.
 * POST - `/api/shorturl`
   * Check if request URL is valid.
