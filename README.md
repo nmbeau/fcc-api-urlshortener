@@ -5,13 +5,13 @@
 I added an API in `server.js` to store a URL in MongoDB and return a JSON object with the `original_url` and assigned `short_url`.
 Users are redirected to the `original_url` when the `short_url` is sent to the API.
 
-## Prompt
+## User Stories
 * You should provide your own project, not the example URL.
 * You can POST a URL to `/api/shorturl` and get a JSON response with `original_url` and `short_url` properties. Here's an example: `{ original_url : 'https://freeCodeCamp.org', short_url : 1}`
 * When you visit `/api/shorturl/<short_url>`, you will be redirected to the original URL.
 * If you pass an invalid URL that doesn't follow the valid `http://www.example.com` format, the JSON response will contain `{ error: 'invalid url' }`
 
-## My Code's Logic
+## Code Logic
 * Add log middleware to help with troubleshooting.
 * Create MongoDB schema and init `Url` model.
 * POST - `/api/shorturl`
